@@ -11,7 +11,7 @@ let printString = s => {
 
 let btos = (b: bool) => b ? "true" : "false"
 
-readFile("person1.json")->Pr.then((s: string, _: Record.person) => {
+readFile("src/promises/person1.json")->Pr.then((s: string, _: Record.person) => {
   Js.log2("s=", s)
   {age: 50, name: "Jack Dent"}
   // Parse.toPerson(s)

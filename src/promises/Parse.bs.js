@@ -6,5 +6,8 @@ function toPerson(prim) {
   return ParseJs.toPerson(prim);
 }
 
-export { toPerson };
+export {
+  toPerson ,
+  
+}
 /* ./Parse.js Not a pure module */

@@ -4,11 +4,16 @@ import * as PrJsJs from "./PrJs.js";
 
 function $$catch(prim, prim$1) {
   PrJsJs.catchError(prim, prim$1);
+  
 }
 
 function $$then(prim, prim$1) {
   return PrJsJs.thenResult(prim, prim$1);
 }
 
-export { $$catch, $$then };
+export {
+  $$catch ,
+  $$then ,
+  
+}
 /* ./PrJs.js Not a pure module */
