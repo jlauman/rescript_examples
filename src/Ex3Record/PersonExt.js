@@ -1,4 +1,4 @@
-export function toPerson(string) {
+export function parseJsonExt(string) {
   const json = JSON.parse(string);
   if (!"age" in json) {
     throw new Error('JSON has no "age" property');
@@ -12,7 +12,14 @@ export function toPerson(string) {
   if (typeof json.name !== "string") {
     throw new Error('JSON "name" value is not string');
   }
+  if (!"alive" in json) {
+    throw new Error('JSON has no "alive" property');
+  }
+  if (typeof json.alive !== "boolean") {
+    throw new Error('JSON "age" value is not boolean');
+  }
   const age = json.age;
   const name = json.name;
-  return { age, name };
+  const alive = json.alive;
+  return { age, name, alive };
 }

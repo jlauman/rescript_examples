@@ -13,7 +13,8 @@ Js.log(message)
 // shadowing
 let result = 0
 let result = result + 1
-let result = "something"
+let result = "something " ++ Belt.Int.toString(result)
+Js.log(`result=${result}`)
 
 module PrivateLet = {
   %%private(let a = 3)

@@ -9,10 +9,8 @@
     "module": "es6",
     "in-source": true
   },
-  "suffix": ".bs.js",
-  "bsc-flags": [
-    "-open Belt"
-  ],
+  "suffix": ".js",
+  "bsc-flags": [],
   "warnings": {
     "error": "+101"
   }
